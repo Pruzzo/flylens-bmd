@@ -265,6 +265,68 @@
   color: #f87171;
 }
 
+/* Contact Info Box */
+.contact-info-box {
+  background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
+  padding: 2rem;
+  border-radius: 16px;
+  text-align: center;
+  margin-top: 3rem;
+  box-shadow: 0 10px 40px rgba(220, 38, 38, 0.4);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.contact-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+.contact-info-box h3 {
+  color: white;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.contact-info-box p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.instagram-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 1rem 2rem;
+  background: white;
+  color: #dc2626;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.instagram-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  background: #f8f8f8;
+}
+
+.instagram-btn svg {
+  width: 28px;
+  height: 28px;
+}
+
 /* Footer - Mobile First */
 .footer {
   background: #000;
@@ -426,6 +488,33 @@
   .form-container h3 {
     font-size: 2rem;
     margin-bottom: 2rem;
+  }
+
+  .contact-info-box {
+    padding: 3rem;
+    margin-top: 4rem;
+  }
+
+  .contact-icon {
+    font-size: 4rem;
+  }
+
+  .contact-info-box h3 {
+    font-size: 2rem;
+  }
+
+  .contact-info-box p {
+    font-size: 1.2rem;
+  }
+
+  .instagram-btn {
+    font-size: 1.2rem;
+    padding: 1.2rem 2.5rem;
+  }
+
+  .instagram-btn svg {
+    width: 32px;
+    height: 32px;
   }
 
   .form-row {
